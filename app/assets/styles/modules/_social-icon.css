@@ -1,0 +1,23 @@
+.social-icon {
+	text-align: center;
+
+	&__icon {
+		background-color: $mainOrange;
+		display:inline-block;
+		margin:0 5px 20px 10px;
+		width:33%;
+		height:60px;
+		padding-top: 10px;
+		
+		@mixin atSmall {
+		background-color: $mainOrange;
+		display:inline-block;
+		margin:0 5px 0 0;
+		width:72px;
+		height:72px;
+		padding-top: 10px;
+		}
+
+	}
+
+}

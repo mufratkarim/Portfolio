@@ -1,0 +1,48 @@
+.page-section {
+	padding:1.2rem 0;
+
+	@mixin atMedium {
+		padding: 4.5rem 0;
+	}
+
+	&--for-large-hero {
+		border-bottom: 10px solid $mainBlue;
+		position: relative;
+		padding:0 0;
+	}
+
+	&--blue {
+		background-color: $mainBlue;
+		padding-bottom: 0;
+	}
+
+	&--text-white {
+		color: white;
+	}
+
+	&--testimonials {
+		background-color:#e0e6ef;
+
+		@mixin atLarge {
+			&.lazyloaded {
+				background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+				background-size: cover;
+			}
+		}
+		
+	}
+
+	&--no-b-padding-until-medium {
+		padding-bottom:0rem;
+		@mixin atMedium {
+			padding-bottom:4.5rem;
+		}
+	}
+
+	&--no-b-padding-until-large {
+		padding-bottom:0rem;
+		@mixin atLarge{
+			padding-bottom:4.5rem;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.wrapper {
+	overflow:hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right:auto;
+
+	&--medium {
+		max-width:976px;
+	}
+
+	&--background {
+		background:url('../../assets/images/hoor-beauty-salon--front.jpg');
+		background-size:contain;
+		color:white;
+		text-shadow: 5px 5px 5px $mainBlue;
+	}
+
+	&--dark {
+		color: $mainBlue;
+		font-weight:9000;
+		background: rgba(255,255,255, .7);
+		padding: 5px 18px;
+		margin-left:-18px;
+		text-shadow:5px 5px 5px white;
+	}
+
+	&--narrow {
+		max-width:470px;
+	}
+
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--b-margin {
+		margin-bottom: 1rem;
+		@mixin atSmall {
+			margin-bottom: 3.3rem;
+		}
+	}
+
+	&--no-padding-until-medium {
+		padding-left:0px;
+		padding-right:0px;
+
+		@mixin atMedium {
+			padding-left:18px;
+			padding-right:18px;
+		}
+	}
+
+	&--no-padding-until-large {
+		padding-left:0px;
+		padding-right:0px;
+
+		@mixin atLarge {
+			padding-left:18px;
+			padding-right:18px;
+		}
+	}
+
+}
