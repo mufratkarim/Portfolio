@@ -1,0 +1,86 @@
+h1 {
+	background: #2980b9;
+	color: black;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: normal;
+	font-family: "Kaushan Script";
+}
+#toggleForm {
+	float: right;
+	color: #5CDB95;
+}
+.fa-trash-alt {
+	padding-left: 12px;
+}
+
+body {
+	font-family:"Satisfy" ;
+	background: #003973;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ul {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width:600px;
+	margin: 100px auto;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+	background: #f7f7f7;
+}
+
+.completed {
+	color: gray;
+	text-decoration:line-through;
+}
+
+li {
+	background:#ffffff;
+	height: 55px;
+	line-height: 40px;
+	color: black;
+	font-size: 25px;
+}
+
+li:nth-child(2n) {
+	background:#f7f7f7;
+	color: black;
+}
+input {
+	font-size: 20px;
+	background: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	outline:none;
+	border:none;
+	line-height: 55px;
+	font-family: 'Libre Baskerville';
+}
+input:focus {
+	border: 3px solid #5CDB95;
+	background: #fff;
+	outline: none;
+	color: red;
+	font-family: 'Libre Baskerville';
+}
+
+li span {
+	background:#e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	color: black;
+	width: 0px;
+	display: inline-block;
+	transition: 0.5s linear;
+	opacity: 0;
+}
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}

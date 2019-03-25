@@ -15,14 +15,20 @@
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 1.5rem;
+		width:12%;
 
-		@mixin atSmall {
+		@mixin atMedium {
 			position: relative;
-			top: 8px;
+			top: 25px;
+			width:10%;
 			margin-right: 0.5rem;
 			margin-left: 0;
 			display:inline-block;
 			margin-bottom: 0;
+		}
+
+		@mixin atLarge {
+			width:8%;
 		}
 	}
 

@@ -6,10 +6,11 @@ class StickyHeader {
 	constructor() {
 		this.lazyImages=$(".lazyload");
 		this.siteHeader=$(".site-header");
-		this.headerTriggerElement=$(".large-hero__title");
+		this.headerTriggerElement=$(".home__title");
 		this.createHeaderWaypoint();
 		this.pageSections=$(".page-section");
 		this.headerLinks=$(".primary-nav a");
+		this.homeLinks=$(".home__text-content a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
 		this.refreshWaypoints();
@@ -23,6 +24,7 @@ class StickyHeader {
 
 	addSmoothScrolling() {
 		this.headerLinks.smoothScroll();
+		this.homeLinks.smoothScroll();
 	}
 
 	createHeaderWaypoint() {

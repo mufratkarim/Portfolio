@@ -27,19 +27,22 @@
 
 	&__logo {
 		position:absolute;
-		background-color:$mainBlue;
 		padding: 25px 36px;
-		top:0px;
+		top:-9px;
 		left:50%;
 		transition: transform 0.3s ease-out;
-		transform:translateX(-50%) translateY(-10%) scale(.8);
+		transform:translateX(-50%) translateY(-19%) scale(.75);
+
+		@mixin atSmall {
+			top:0px;
+		}
 		
 		@mixin atMedium {
 			left:auto;
-			transform:translateX(0) translateY(0);
+			transform:translateX(-35%) translateY(-39%) scale(0.24);
 			
 			.site-header--dark &  {
-				transform: scale(.57);
+				transform: translateX(-45%) translateY(-43%) scale(.15);
 			}
 		}
 	}
@@ -58,7 +61,7 @@
 			left:0;
 			width:20px;
 			height:3px;
-			background-color:rgba($mainOrange,0.8);
+			background-color:rgba($mainColor,0.8);
 			transform-origin:0% 0%;
 			transition: transform .3s ease-out;
 		}
@@ -69,7 +72,7 @@
 			left:0;
 			width:20px;
 			height:3px;
-			background-color:#FFF;
+			background-color:rgba($mainBlue,0.9);
 			transition: all .3s ease-out;
 		}
 
@@ -79,7 +82,7 @@
 			left:0;
 			width:20px;
 			height:3px;
-			background-color:rgba($mainBlue,0.8);
+			background-color:#FFF;
 			transform-origin:0% 100%;
 			transition: transform .3s ease-out;
 		}

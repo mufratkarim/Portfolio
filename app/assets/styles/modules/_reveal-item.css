@@ -6,5 +6,6 @@
 	&--is-visible {
 		opacity:1;
 		transform: scale(1);
+		transition: all 1.5s ease-out;
 	}
 }

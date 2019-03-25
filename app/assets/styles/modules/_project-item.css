@@ -1,0 +1,42 @@
+.project-item {
+	position: relative;
+	padding-bottom: 2.5rem;
+
+	@mixin atSmall {
+		padding-left: 94px;
+	}
+
+	&__icon {
+		display:block;
+		margin:0 auto;
+		width:15%;
+
+		@mixin atSmall {
+			position: absolute;
+			left:0;
+			padding-right:2rem;
+		}
+
+		@mixin atMedium {
+			padding-right:0;
+		}			
+	}
+
+
+
+	&__title {
+		font-size: 1.875rem;
+		font-weight: 900;
+		margin-bottom: 0.8rem;
+		margin-top:0.7em;
+		text-align:center;
+		text-shadow:1px 1px black;
+	}
+
+	@mixin atSmall {
+		font-size: 1.875rem;
+		margin-top:1em;
+		text-align: left;
+
+	}
+}

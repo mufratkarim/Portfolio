@@ -6,14 +6,53 @@
 	padding:.75rem 1.2rem;
 	display:inline-block;
 
+	&--center {
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.5rem;
+		width:20%;
+
+		@mixin atSmall {
+			display:inline-block;
+			margin:10px 40px 30px 40px;
+			width:auto;
+		}
+	}
+
 	&--orange {
 		background-color: $mainOrange;
+		color:$mainBlue;
+		font-weight:500;
 	}
+
+	&--blue {
+		background-color: $mainBlue;
+		color:rgba($mainColor,0.2);
+		font-weight:500;
+	}
+
 	&--large {
 		padding: 1.1rem 1.9rem;
 
 		@mixin atSmall {
 			font-size: 1.25rem;
 		}
+	}
+
+	&--small {
+		font-size: 0.4rem;
+		padding:.55rem .35rem;
+		width:auto;
+		height:auto;
+
+			@mixin atSmall {
+				padding:.75rem 1.2rem;
+				font-size: 1.1rem;
+			}
+
+			@mixin atMedium {
+				font-size: 1.25rem;
+			}
 	}
 }

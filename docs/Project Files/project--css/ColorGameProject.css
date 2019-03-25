@@ -1,0 +1,74 @@
+body {
+	background: #232323;
+	margin: 0;
+	font-family: "Teko";
+}
+.square {
+	width:30%;
+	background: purple;
+	padding-bottom: 30%;
+	float:left;
+	margin: 1.66%;
+	border-radius: 50%;
+	transition: all 1s;
+	margin-top: 30px;
+}
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	background: steelblue;
+	text-align: center;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 10px 0;
+}
+
+#stripe {
+	background: green;
+	text-align: center;
+	height:30px;
+	color: black;
+	padding-bottom: 5px;
+}
+
+#display1 {
+	font-size: 200%;
+	font-family: "Coiny";
+	font-weight: normal;
+}
+
+#messageDisplay {
+	font-size: 150%;
+	font-family: "Coiny";
+	color: yellow;
+	margin: 0px 50px;
+}
+
+button {
+	border:none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-family: "Coiny";
+	font-size: 110%;
+	transition: all 1.0s;
+	margin: 0px;
+}
+
+button:hover {
+	color: red;
+	background:yellow;
+}
+#reset {
+	margin-right: 25px;
+}
+#easy {
+	margin-left: 25px;
+	margin-right: -5px;
+}
