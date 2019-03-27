@@ -1426,8 +1426,8 @@ img {
 
 .reveal-item {
 	opacity:0;	
-	-webkit-transition: all 1.5s ease-out;	
-	transition: all 1.5s ease-out;
+	-webkit-transition: all 1.5s ease-in-out;	
+	transition: all 1.5s ease-in-out;
 	-webkit-transform: scale(1.15);
 	        transform: scale(1.15);
 }
@@ -1436,8 +1436,8 @@ img {
 		opacity:1;
 		-webkit-transform: scale(1);
 		        transform: scale(1);
-		-webkit-transition: all 1.5s ease-out;
-		transition: all 1.5s ease-out;
+		-webkit-transition: all 1.5s ease-in-out;
+		transition: all 1.5s ease-in-out;
 	}
 
 .modal {
