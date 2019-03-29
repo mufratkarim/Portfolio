@@ -610,7 +610,9 @@ img {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 1.5rem;
-		width:20%;
+		max-width: 100px;
+		text-shadow:1px 1px #8DF014;
+		color: #2f5572;
 	}
 
 @media(min-width: 530px) {
@@ -630,8 +632,16 @@ img {
 
 .btn--blue {
 		background-color: #2f5572;
-		color: rgba(141,240,20,0.2);
+		color: rgba(141,240,20,0.8);
 		font-weight:500;
+		max-width: 130px;
+	}
+
+@media(min-width: 800px) {
+
+.btn--blue {
+			color: rgba(141,240,20,0.2)
+	}
 	}
 
 .btn--large {
